@@ -5,7 +5,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-console.log(3232)
+const as=3243;
+console.log(323);
 const a = 2020;
 import HelloWorld from './components/HelloWorld.vue';
 export default defineComponent({
