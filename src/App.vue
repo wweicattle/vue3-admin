@@ -4,8 +4,10 @@
 </template>
 
 <script lang="ts">
+const as=32;
+console.log(as);
 import { defineComponent } from 'vue';
-console.log(3232)
+console.log(323232332)
 const a = 2020;
 import HelloWorld from './components/HelloWorld.vue';
 export default defineComponent({
