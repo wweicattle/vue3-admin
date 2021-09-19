@@ -5,13 +5,19 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
 
+
+
+  const a=2020;
+import HelloWorld from './components/HelloWorld.vue';
 export default defineComponent({
-  name: "App",
+  name: 'App',
   components: {
-    HelloWorld,
+    HelloWorld
   },
+  created() {
+    console.log(21);
+  }
 });
 </script>
 
