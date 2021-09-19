@@ -4,11 +4,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-
-
-
-  const a=2020;
+import { defineComponent } from 'vue';
+console.log(32);
+const a = 2020;
 import HelloWorld from './components/HelloWorld.vue';
 export default defineComponent({
   name: 'App',
