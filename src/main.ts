@@ -1,4 +1,14 @@
-import { createApp } from 'vue';
-import App from './App.vue';
+import { createApp} from 'vue';
+import rootApp from './App.vue';
 
-createApp(App).mount('#app');
+// import "./network/request/index"
+import "./network/request/config"
+
+
+import router from './plugin/router';
+import './plugin/test.js';
+import store from './store';
+const apps = createApp(rootApp);
+apps.use(router);
+apps.use(store);
+apps.mount('#app');

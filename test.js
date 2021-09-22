@@ -11,8 +11,3 @@
 // const ass = 3232;
 // const s = 21;
 
-const a = 32323;
-const asss = 32323;
-console.log('this.is test ');
-console.log(434);
-console.log(21212);

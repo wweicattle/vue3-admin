@@ -1,11 +1,11 @@
 <template>
+  <div>{{ $store.state.name }}</div>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
 </template>
 
 <script lang="ts">
 const aaaa = 'this is test demo';
-
 const asss = 33;
 const asssasasasasasas = 32;
 import { defineComponent } from 'vue';
@@ -13,6 +13,7 @@ const as = 3243;
 console.log(323);
 const a = 2020;
 import HelloWorld from './components/HelloWorld.vue';
+import { useStore } from 'vuex';
 export default defineComponent({
   name: 'App',
   components: {
@@ -20,6 +21,8 @@ export default defineComponent({
   },
   created() {
     console.log(21);
+    let f = useStore('name');
+    console.log(f);
   }
 });
 </script>
