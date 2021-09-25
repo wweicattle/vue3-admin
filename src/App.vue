@@ -14,6 +14,9 @@ console.log(323);
 const a = 2020;
 import HelloWorld from './components/HelloWorld.vue';
 import { useStore } from 'vuex';
+let asa: string;
+asa = '32';
+
 export default defineComponent({
   name: 'App',
   components: {

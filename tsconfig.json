@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    // tsc 使用需要进行配置 转为es6之后的
     "target": "esnext",
     "module": "esnext",
     "strict": true,
