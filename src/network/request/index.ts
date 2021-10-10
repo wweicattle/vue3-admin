@@ -49,10 +49,7 @@ class WWAxios {
 
   get<T>(config: AxiosRequestConfig): Promise<T> {
     return new Promise((val) => {
-      this.instance.request({ ...config, method: 'GET' }).then((da: any) => {
-        console.log(da);
-        val(da);
-      });
+      this.instance.request({ ...config, method: 'GET' });
     });
   }
 }

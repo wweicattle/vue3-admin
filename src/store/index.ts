@@ -1,9 +1,17 @@
-import { createStore } from 'vuex';
-
-const store = createStore({
+import { createStore, Store, useStore as rootStore } from 'vuex';
+import Login from './Login';
+import { rooState, TotalState } from './type';
+const store = createStore<rooState>({
   state: {
-    name: 'wuwei'
+    name: 'wuwei',
+    age: '2'
   },
-  mutations: {}
+  mutations: {},
+  modules: {
+    login:Login
+  }
 });
+export function useStore(): Store<TotalState> {
+  return rootStore();
+}
 export default store;

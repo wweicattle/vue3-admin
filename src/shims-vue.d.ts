@@ -4,5 +4,8 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>;
   export default component;
 }
-
-// declare module $store;
+declare module 'espree' {
+  const a: any;
+  export default any;
+}
+export const $store: any;

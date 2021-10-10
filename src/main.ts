@@ -7,10 +7,15 @@ import router from './plugin/router';
 import './plugin/test.js';
 import store from './store';
 import 'normalize.css';
-import 'element-plus/dist/index.css'
-import installElement from "./plugin/element"
-import { ElButton } from 'element-plus'
-console.log(ElButton);
+import 'element-plus/dist/index.css';
+import installElement from './plugin/element';
+import { ElButton } from 'element-plus';
+
+// requestLogin().then((da:any)=>{
+//   console.log(da);
+
+// })
+// console.log(ElButton);
 
 const apps = createApp(rootApp);
 

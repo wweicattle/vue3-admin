@@ -3,7 +3,7 @@ import axiosInstance from './index';
 const axioss = new axiosInstance({
   // baseURL: '',
   timeout: 10000,
-  baseURL: 'http://httpbin.org',
+  // baseURL: 'http://httpbin.org',
   interceptors: {
     requsetInterceptor: (config) => {
       console.log('1111111111');
@@ -24,46 +24,5 @@ const axioss = new axiosInstance({
     }
   }
 });
-interface datatype {
-  args?: any;
-}
-axioss
-  .request<datatype>({
-    method: 'GET',
-    url: '/get',
-    params: {
-      name: 'wuwei',
-      age: 25
-    }
-  })
-  .then((da) => {
-    console.log(da);
-  });
 
-axioss
-  .get({
-    url: '/get',
-    data: {
-      name: 'wuwei',
-      age: 25
-    },
-    params: {
-      sa: 'wuweiwu',
-      age: 22
-    }
-  })
-  .then((da) => {
-    console.log(da);
-  });
-// const axiosTwo = new axiosInstance({
-//   // baseURL: '',
-//   timeout: 10000
-// });
-// axiosTwo.request({
-//   method: 'GET',
-//   url: '/wuwei',
-//   params: {
-//     name: 'wuwei',
-//     age: 25
-//   }
-// });
+export default axioss;
